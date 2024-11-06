@@ -4,6 +4,20 @@
     height: "35px";
 }
 
+.slide-in-text {
+    opacity: 0;
+    transform: translateX(-100%); /* Start position: off the left side */
+    animation: slideIn 1s forwards; /* Animation duration and type */
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* End position: original placement */
+    }
+  }
+  
+  
 .nav-item{
 }
 .typing-container {
@@ -31,24 +45,5 @@
     50% { border-color: transparent; }
   }
 
-  <div class="fade-in">Hello, World!</div>
-
-  <style>
-    .fade-in {
-      opacity: 0;
-      animation-name: fadeIn;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-    }
-  
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-  </style>
 
  
