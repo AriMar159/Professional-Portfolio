@@ -1,0 +1,28 @@
+.headshot{
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.typing-container {
+    display: inline-block;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(12, end) forwards, blink-caret 0.75s step-end infinite;
+  }
+  
+  .typing-text {
+    display: inline-block;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    10% { border-color: transparent; }
+  }
+  
